@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastrar desaparecido · Appet</title>
+<link rel="icon" href="img/brand-symbol.png">
+<link rel="stylesheet" href="css/style.css?v=20260930-appet2">
+<link rel="stylesheet" href="css/visual.css?v=20260930-appet2">
+<link rel="stylesheet" href="css/portal.css?v=20260930-appet2">
+<link rel="stylesheet" href="css/campaign-workspace.css?v=20260930-appet2"></head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo" aria-label="Appet — início"><span class="logo-mark"><img src="img/brand-symbol.png" alt="" width="56" height="56"></span><span class="brand-word"><span class="brand-adota">App</span><span class="brand-pet">et</span></span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Início</a>
+        <a href="adotar.html">Quero Adotar</a>
+        <a href="compatibilidade.html">Compatibilidade</a>
+        <a href="historias.html">Histórias</a>
+        <a href="desaparecidos.html">Desaparecidos</a>
+        <a href="conscientizacao.html">Conscientização</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <span id="nav-extra-links"></span>
+      </nav>
+      <div class="nav-actions" id="nav-actions"></div>
+    </div>
+  </header>
+<main id="main">
+<div class="container section" style="max-width:720px;">
+  <div class="form-card" style="max-width:720px;">
+    <span class="eyebrow">Animal desaparecido</span>
+    <h1 style="font-size:1.7rem;">Cadastrar animal desaparecido</h1>
+    <p style="margin-bottom:20px;">Quanto mais detalhes, maior a chance de reencontrar seu animal.</p>
+    <div id="alert-area"></div>
+    <form id="missing-form">
+      <div class="form-row">
+        <div class="form-field"><label for="m-name">Nome do animal (se souber)</label><input id="m-name"></div>
+        <div class="form-field">
+          <label for="m-species">Espécie</label>
+          <select id="m-species"><option value="cachorro">Cachorro</option><option value="gato">Gato</option></select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="m-breed">Raça</label><input id="m-breed"></div>
+        <div class="form-field"><label for="m-color">Cor</label><input id="m-color"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="m-age">Idade aproximada</label><input id="m-age"></div>
+        <div class="form-field"><label for="m-date">Data do desaparecimento</label><input type="date" required id="m-date"></div>
+      </div>
+      <div class="form-field"><label for="m-features">Características específicas</label><textarea rows="2" id="m-features"></textarea></div>
+      <div class="form-field"><label for="m-location">Local onde foi visto pela última vez</label><input id="m-location"></div>
+      <div class="form-row">
+        <div class="form-field"><label for="m-city">Cidade</label><input required id="m-city"></div>
+        <div class="form-field"><label for="m-state">Estado</label><input required id="m-state"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="m-contact">Contato</label><input required id="m-contact"></div>
+        <div class="form-field"><label for="m-reward">Recompensa (opcional)</label><input id="m-reward"></div>
+      </div>
+      <div class="form-field"><label for="m-photo">Foto (JPG/PNG/WebP, máximo 2 MB)</label><input type="file" accept="image/jpeg,image/png,image/webp" id="m-photo"></div>
+      <button class="btn btn-danger" type="submit" style="width:100%;">Publicar alerta de desaparecimento</button>
+    </form>
+  </div>
+</div>
+</main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><a href="index.html" class="logo" aria-label="Appet — início"><span class="logo-mark"><img src="img/brand-symbol.png" alt="" width="56" height="56"></span><span class="brand-word"><span class="brand-adota">App</span><span class="brand-pet">et</span></span></a></div>
+          <p style="color:#EAF3EF;opacity:.85;font-size:.9rem;">Plataforma de adoção de animais desenvolvida por estudantes da Escola Estadual Professor Antônio Dantas, em Apodi/RN.</p>
+        </div>
+        <div>
+          <h4>Plataforma</h4>
+          <p><a href="adotar.html">Quero Adotar</a>
+        <a href="compatibilidade.html">Compatibilidade</a>
+        <a href="historias.html">Histórias</a></p>
+          <p><a href="desaparecidos.html">Animais Desaparecidos</a></p>
+          <p><a href="conscientizacao.html">Conscientização</a></p>
+          <p><a href="sobre.html">Sobre</a></p>
+        </div>
+        <div>
+          <h4>Comunidade</h4>
+          <p><a href="cadastrar-animal.html">Cadastrar animal</a></p>
+          <p><a href="login.html">Entrar</a></p>
+          <p><a href="contato.html">Fale conosco</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Appet. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+<script src="js/store.js?v=20260930-appet2"></script>
+<script src="js/auth.js?v=20260930-appet2"></script>
+<script src="js/icons.js?v=20260930-appet2"></script>
+<script src="js/nav.js?v=20260930-appet2"></script>
+<script src="js/pages/cadastrar-desaparecido.js?v=20260930-appet2"></script>
+</body>
+</html>

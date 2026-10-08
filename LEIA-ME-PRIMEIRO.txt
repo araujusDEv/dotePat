@@ -1,0 +1,54 @@
+APPET — SITE COMPLETO — 07/10/2026
+
+Este pacote reúne o front-end, o servidor Node.js, os dados iniciais,
+os arquivos de dependências e as correções mais recentes das campanhas
+e da recuperação administrativa. Não é apenas um pacote de correção.
+
+TESTAR NO WINDOWS
+1. Use "Extrair tudo" para extrair TODO o ZIP em uma pasta.
+2. Use Node.js 22.23.1, a versão utilizada na verificação deste pacote.
+3. Na pasta appet, execute INICIAR.bat.
+   A primeira execução instala as dependências e precisa de internet.
+4. Mantenha o terminal aberto e acesse http://127.0.0.1:3000.
+5. As credenciais iniciais são exibidas uma vez no terminal quando
+   o banco é criado. Guarde-as para testar o administrador e a ONG.
+
+Alternativa pelo terminal, na pasta que contém package.json:
+  npm ci
+  npm start
+
+Não abra index.html por duplo clique: o site depende do servidor.
+
+SUBIR O SITE
+Envie o conteúdo da pasta appet para a raiz do seu repositório.
+Inclua server.js, package.json, package-lock.json, lib/, data/seed.json
+e todas as pastas e páginas do site. Inclua também o .gitignore.
+As dependências node_modules são instaladas com npm ci.
+
+A hospedagem precisa executar Node.js e permitir gravar o SQLite.
+Comando de instalação: npm ci
+Comando de início: npm start
+Verificação de funcionamento: /api/health
+Para configuração e armazenamento dos dados, leia GUIA_PUBLICACAO.md.
+No serviço atual, preserve as variáveis de ambiente e o banco existente.
+
+DADOS EXISTENTES
+Este ZIP contém dados iniciais de demonstração em data/seed.json.
+Não inclui bancos locais, contas/sessões de teste, anexos privados
+ou senhas da sua hospedagem. Os dados já publicados ficam no banco
+da hospedagem. Faça backup antes de atualizar e preserve DATA_DIR.
+Armazenamento temporário pode perder os cadastros após nova publicação;
+use armazenamento persistente para conservar os dados.
+
+ACESSO ADMINISTRATIVO
+A correção de recuperação do administrador está incluída em server.js.
+RECUPERAR_ADMIN.md explica a operação por variáveis de ambiente.
+Ela só é necessária se você precisar redefinir o administrador existente.
+O botão "Esqueci minha senha" registra um pedido interno; ainda não
+envia e-mail nem um link para definir uma nova senha.
+
+CONFERÊNCIA
+VERIFICACAO_PACOTE.md informa os testes executados nesta entrega.
+Para repetir os testes automatizados: npm test.
+
+Este pacote não publica o site automaticamente.

@@ -1,0 +1,17 @@
+{
+  "name": "appet",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Plataforma Appet com adoção acompanhada, Node.js e SQLite",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/pix.cjs && node tests/workflow.cjs && node tests/security.cjs && node tests/security-regressions.cjs && node tests/migration.cjs && node tests/brand.cjs && node tests/admin-recovery.cjs"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "pdf-lib": "1.17.1",
+    "pngjs": "7.0.0"
+  }
+}
